@@ -1,0 +1,17 @@
+{
+  "name": "yuki-interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Jeffrey Davidsz",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "jsdom": "^22.1.0",
+    "node-fetch": "^2.6.1"
+  }
+}
