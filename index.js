@@ -1,5 +1,4 @@
 require("dotenv").config(); // load environment variables from .env file
-const fetch = require("node-fetch");
 const { JSDOM } = require("jsdom");
 const strAccessKey = process.env.API_KEY;
 const strAdministrationId = process.env.ADMINISTRATION_ID;
@@ -7,6 +6,7 @@ const strWebserviceUrl = "https://api.yukiworks.nl/ws/Sales.asmx";
 const strSalesXml = `
 <SalesInvoices xmlns="urn:xmlns:http://www.theyukicompany.com:salesinvoices" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <SalesInvoice>
+                <Reference>669EC934-0187</Reference>
                 <Subject>Testfactuur - 1</Subject>
                 <PaymentMethod>ElectronicTransfer</PaymentMethod>
                 <Process>false</Process>
